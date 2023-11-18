@@ -2,6 +2,9 @@
 <script lang="ts">
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import '../app.css';
+	import { ModeWatcher } from 'mode-watcher';
+	import Header from '$lib/header.svelte';
 
 	export let data;
 
@@ -23,15 +26,6 @@
 	});
 </script>
 
-<div>
-	<a href="/">Logo</a>
-
-	{#if session}
-		<form action="/auth/signout" method="POST">
-			<button type="submit">Sign Out</button>
-		</form>
-	{:else}
-		<a href="/auth/signin">Sign in</a>
-	{/if}
-</div>
+<Header {session} />
+<ModeWatcher />
 <slot />

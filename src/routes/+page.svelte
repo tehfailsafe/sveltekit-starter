@@ -1,11 +1,14 @@
 <script>
+	import Button from '$lib/components/ui/button/button.svelte';
 	import { count, increment } from '$lib/stores/store';
 	// import { loading, session, signin, signout } from '$lib/stores/authStore';
 </script>
 
-<h1>Welcome</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<button on:click={increment}>Click: {$count}</button>
+<div class="container mx-auto">
+	<h1 class="text-3xl font-bold tracking-tight">Welcome</h1>
+	<button on:click={increment} class="px-4 py-2 rounded-md bg-slate-300">Click: {$count}</button>
+	<Button on:click={increment}>Clicked: {$count}</Button>
+</div>
 <!-- 
 {$loading}
 {$session}
