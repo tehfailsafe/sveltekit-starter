@@ -1,8 +1,8 @@
 import { writable } from 'svelte/store';
 import { supabase } from '$lib/supabase';
 
-const { data, error } = await supabase.from('count').select('*').single();
-export let count = writable(data.value);
+const { data: countData, error } = await supabase.from('count').select('*').single();
+export let count = writable(countData.value);
 
 supabase
 	.channel('count')
@@ -19,9 +19,7 @@ export const increment = async () => {
 			.from('count')
 			.update({ value: value + 1 })
 			.eq('id', 1)
-			.then(() => {
-				console.log('updated');
-			});
+			.then(() => {});
 		return value + 1;
 	});
 };

@@ -19,12 +19,13 @@
 			/>
 			<span class="sr-only">Toggle theme</span>
 		</Button>
+
 		{#if session}
-			<form action="/auth/signout" method="POST">
+			<form action="/signout" method="POST">
 				<Button variant="outline" type="submit">Sign Out</Button>
 			</form>
 		{:else}
-			<a href="/auth/signin">Sign in</a>
+			<Button variant="outline" href="/signin">Sign In</Button>
 		{/if}
 	</div>
 </div>

@@ -9,5 +9,5 @@ export const POST = async ({ locals }) => {
 		throw error(500, 'Something went wrong');
 	}
 
-	throw redirect(303, '/auth/signin');
+	throw redirect(303, '/');
 };

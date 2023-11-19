@@ -1,6 +1,21 @@
-import { createClient } from '@supabase/supabase-js';
+import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from '$env/static/public';
+import { combineChunks, createBrowserClient, isBrowser, parse } from '@supabase/ssr';
 
-export const supabase = createClient(
-	'https://zbtnpjdyvwohxnujwyoe.supabase.co',
-	'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpidG5wamR5dndvaHhudWp3eW9lIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODY0NDE0ODUsImV4cCI6MjAwMjAxNzQ4NX0.4oT8MUs4sIhTnccsXzU7KbOaplTyFNdCCiOIjmhEODw'
-);
+export const supabase = createBrowserClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY, {
+	global: {
+		fetch
+	},
+	cookies: {
+		get(key) {
+			if (!isBrowser()) {
+				return;
+			}
+
+			const cookie = combineChunks(key, (name) => {
+				const cookies = parse(document.cookie);
+				return cookies[name];
+			});
+			return cookie;
+		}
+	}
+});
