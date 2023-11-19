@@ -29,6 +29,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-vercel": "^3.1.0",
+		"@vercel/analytics": "^1.1.1",
 		"bits-ui": "^0.9.8",
 		"clsx": "^2.0.0",
 		"lucide-svelte": "^0.292.0",
