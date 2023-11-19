@@ -4,6 +4,6 @@
 </script>
 
 <div class="container mx-auto">
-	<h1 class="text-3xl font-bold tracking-tight">Welcome</h1>
+	<h1 class="text-3xl font-bold leading-tight tracking-tight">Welcome to SupaSvelte</h1>
 	<Button on:click={increment}>Clicked: {$count}</Button>
 </div>
