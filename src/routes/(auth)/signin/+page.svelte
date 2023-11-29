@@ -24,7 +24,9 @@
 	<title>Sveltekit Starter - Login</title>
 </svelte:head>
 
-<div class="container max-w-md p-8 mx-auto text-center border rounded-md bg-primary-foreground">
+<div
+	class="container flex flex-col justify-center h-full max-w-md p-8 mx-auto text-center border rounded-md bg-primary-foreground"
+>
 	<h1 class="mb-6 text-3xl font-bold tracking-tight">Sign In</h1>
 	<Button on:click={signin} class="w-full">Sign In with Google</Button>
 </div>
