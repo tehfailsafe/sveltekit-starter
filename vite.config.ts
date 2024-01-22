@@ -5,5 +5,8 @@ export default defineConfig({
 	build: {
 		target: 'esnext'
 	},
-	plugins: [sveltekit()]
+	plugins: [sveltekit()],
+	server: {
+		port: 3000
+	}
 });
