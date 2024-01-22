@@ -1,6 +1,6 @@
 import { supabase } from '$lib/supabase';
 
-const createCountStore = async () => {
+const CountStore = async () => {
 	let count = $state({
 		id: '0',
 		value: 0
@@ -25,4 +25,4 @@ const createCountStore = async () => {
 	};
 };
 
-export const countStore = await createCountStore();
+export const countStore = await CountStore();
