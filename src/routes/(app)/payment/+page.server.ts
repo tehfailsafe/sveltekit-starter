@@ -26,11 +26,11 @@ export const actions: Actions = {
 
 			url = session.url;
 		} catch (errorObj) {
-			throw error(500, 'Unknown error occurred');
+			error(500, 'Unknown error occurred');
 		}
 
 		if (url) {
-			throw redirect(303, url);
+			redirect(303, url);
 		}
 	}
 };
