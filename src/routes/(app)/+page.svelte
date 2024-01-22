@@ -1,6 +1,6 @@
 <script>
 	import Button from '$lib/components/ui/button/button.svelte';
-	import { countStore } from '$lib/stores/countStore.svelte';
+	import { countStore } from '$lib/stores/CountStore.svelte';
 </script>
 
 <div class="container">
