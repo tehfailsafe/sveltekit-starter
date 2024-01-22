@@ -1,5 +1,5 @@
 import openai from '$lib/openai';
-import find_owners from '$lib/utils/find_owners';
+import { find_owners } from '$lib/utils/find_owners';
 import { json } from '@sveltejs/kit';
 
 export const GET = async ({ request }) => {
