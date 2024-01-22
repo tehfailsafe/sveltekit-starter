@@ -1,13 +1,15 @@
 <script>
-	import { countStore } from '$lib/stores/countStore.svelte';
+	import Button from '$lib/components/ui/button/button.svelte';
+	import { countStore } from '$lib/stores/CountStore.svelte';
 	import { projectStore } from '$lib/stores/ProjectStore.svelte';
 </script>
 
-<h1>Runes</h1>
-<div>{countStore.count.value}</div>
-<button on:click={countStore.increment}>Increment</button>
-
-<h1>ProjectStore</h1>
-{#each projectStore.projects as project}
-	<div>{project.title}: {project.api_routes.length}</div>
-{/each}
+<div class="container mt-12">
+	<div class="flex justify-between">
+		<h1>ProjectStore</h1>
+		<Button variant="secondary" on:click={projectStore.createProject}>Create Project</Button>
+	</div>
+	{#each projectStore.projects as project}
+		<div>{project.title}: {project.api_routes.length}</div>
+	{/each}
+</div>

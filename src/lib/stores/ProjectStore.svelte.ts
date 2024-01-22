@@ -1,9 +1,10 @@
 import { supabase } from '$lib/supabase';
+import { user } from '$lib/utils/user_id';
 
 type Project = {
-	id: string;
+	id?: string;
 	title: string;
-	description: string;
+	description?: string;
 	api_routes: Route[];
 };
 
@@ -26,6 +27,15 @@ const ProjectStore = async () => {
 	return {
 		get projects() {
 			return projects;
+		},
+		createProject: async () => {
+			const newProject = {
+				title: 'New Project',
+				user_id: user!.id
+			};
+			projects = [...projects, { ...newProject, api_routes: [] }];
+
+			const { data } = await supabase.from('api_projects').insert(newProject).select().single();
 		}
 	};
 };
