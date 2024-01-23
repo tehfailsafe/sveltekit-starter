@@ -164,6 +164,13 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
+"@internationalized/date@^3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.5.1.tgz#14401139f70c1ef14b845d3cac8912e82e82adcc"
+  integrity sha512-LUQIfwU9e+Fmutc/DpRTGXSdgYZLBegi4wygCWDSVmUdLTaMHsQyASDiJtREwanwKuQLq0hY76fCJ9J/9I2xOQ==
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
@@ -222,6 +229,30 @@
     dequal "^2.0.3"
     focus-trap "^7.5.2"
     nanoid "^4.0.2"
+
+"@melt-ui/svelte@0.67.0":
+  version "0.67.0"
+  resolved "https://registry.yarnpkg.com/@melt-ui/svelte/-/svelte-0.67.0.tgz#8a524987818683eada053c615503cfb96a7a09ef"
+  integrity sha512-fd9PsDE6sKbeyExagqH0nOpZEnDqyr2efbkjfmCRRYXVW5vlDEOPaSB+mg4Tjch121102sFH1Od+MlXwmeHy3A==
+  dependencies:
+    "@floating-ui/core" "^1.3.1"
+    "@floating-ui/dom" "^1.4.5"
+    "@internationalized/date" "^3.5.0"
+    dequal "^2.0.3"
+    focus-trap "^7.5.2"
+    nanoid "^4.0.2"
+
+"@melt-ui/svelte@0.68.0":
+  version "0.68.0"
+  resolved "https://registry.yarnpkg.com/@melt-ui/svelte/-/svelte-0.68.0.tgz#97a7eecc1639466ff4882d9a39939578fed39c97"
+  integrity sha512-/QvA98hnYEodZtHJ71+ocum/WWp30hVNt3F8uiZKnNYwZDaiQYjlyR9AaGKYcZLCe6R68op1mfCzc0kTzJilyA==
+  dependencies:
+    "@floating-ui/core" "^1.3.1"
+    "@floating-ui/dom" "^1.4.5"
+    "@internationalized/date" "^3.5.0"
+    dequal "^2.0.3"
+    focus-trap "^7.5.2"
+    nanoid "^5.0.4"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -668,10 +699,28 @@ bindings@^1.4.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-bits-ui@^0.9.8:
-  version "0.9.8"
-  resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-0.9.8.tgz#e73979b7630c1c2bffc710a3aa9a4d2fcf8978ca"
-  integrity sha512-cjuurfmqEIhQy51uOY370ihAN/oPxZXT7ifa7CAf3G+Ft2G4ucJKk3xM3Mq1AidJn4zCoDOjr8EW+VOJtcS0+g==
+bits-ui@^0.13.3:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-0.13.6.tgz#0f6e7a2aadee59bf593ac786817f83d6b30dc534"
+  integrity sha512-LmbWgtriqfotontFi1lC6tEB56HOLP4YpwVKX3qrHxEMfMAyc/NFQgtGOHizTGMmUUkdVtCE37PA1Wnk6gsUZg==
+  dependencies:
+    "@internationalized/date" "^3.5.1"
+    "@melt-ui/svelte" "0.67.0"
+    nanoid "^5.0.4"
+
+bits-ui@^0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-0.15.1.tgz#5ccad6273091fcb1f60f00d392d1fc10ec1761b7"
+  integrity sha512-1Np8bT6W6SC2tKESfm0CySW+7+xU5S0GuUZqIxC41atZE3WIRiRlzXEYHxW88w6UaLFzZ51ns4E7pchkdV5XCQ==
+  dependencies:
+    "@internationalized/date" "^3.5.1"
+    "@melt-ui/svelte" "0.68.0"
+    nanoid "^5.0.4"
+
+bits-ui@^0.9.0:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-0.9.9.tgz#02b20e41ad673670259aadcefe2c75d827fe3626"
+  integrity sha512-LkdkyTtpXdkjBzPZJVJgpcre4fut6DONoprMfadHFo82HNUhph+02CxDjYEcZcThb5z4YjSxMlCYvQPZm+YtfQ==
   dependencies:
     "@melt-ui/svelte" "0.61.2"
     nanoid "^5.0.3"
@@ -766,6 +815,14 @@ clsx@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.0.0.tgz#12658f3fd98fafe62075595a5c30e43d18f3d00b"
   integrity sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==
+
+cmdk-sv@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/cmdk-sv/-/cmdk-sv-0.0.13.tgz#87815732bbe57709ac0a82ffebe5c96c41985aef"
+  integrity sha512-WrYn0MMdVyzJx+KuOQy028/7mv+uMwO1cxVBM0uJ4KA+50PX792epsj8Yw3It8WfWR8Rae7siBCg54mIAlKsiw==
+  dependencies:
+    bits-ui "^0.9.0"
+    nanoid "^5.0.2"
 
 color-support@^1.1.2:
   version "1.1.3"
@@ -907,6 +964,24 @@ electron-to-chromium@^1.4.535:
   version "1.4.588"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.588.tgz#d553f3c008e73488fb181fdf2601fdb0b1ffbb78"
   integrity sha512-soytjxwbgcCu7nh5Pf4S2/4wa6UIu+A3p03U2yVr53qGxi1/VTR3ENI+p50v+UxqqZAfl48j3z55ud7VHIOr9w==
+
+embla-carousel-reactive-utils@8.0.0-rc19:
+  version "8.0.0-rc19"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.0.0-rc19.tgz#6604f9c9f3a07f13734ca0af7c19310c1adc1f7e"
+  integrity sha512-ed9NppY0OxTtrSIwTCYNcMLlQfSNcNy8Zsw8uIG0te3qrhvQ2ePPsbcElK2SRAV8VMU6G7JQweQIb6amzYMDXA==
+
+embla-carousel-svelte@^8.0.0-rc19:
+  version "8.0.0-rc19"
+  resolved "https://registry.yarnpkg.com/embla-carousel-svelte/-/embla-carousel-svelte-8.0.0-rc19.tgz#c8b87b4cf1903053e69a764000cc211e8c266281"
+  integrity sha512-gDNjcihzTNB/0Iy6klOa0g34x11sWD6sZ3n6835EV/GtHq4iu2P5c/o71KwZRsCTCoRnILpPuVSBUEiwzew1AA==
+  dependencies:
+    embla-carousel "8.0.0-rc19"
+    embla-carousel-reactive-utils "8.0.0-rc19"
+
+embla-carousel@8.0.0-rc19:
+  version "8.0.0-rc19"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.0.0-rc19.tgz#f0d8dbf54f2f8f2cdfe0697f371fe5d5fd4e2dac"
+  integrity sha512-PAChVyYoVZo8subkBN8LjZ7+0vk4CmVvMnxH0Y2ux76VUEUBl1wk5xDo8+MUhH5MXU6ZrgkBpMe++bKob1Z+2g==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -1492,10 +1567,10 @@ nanoid@^4.0.2:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.2.tgz#140b3c5003959adbebf521c170f282c5e7f9fb9e"
   integrity sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==
 
-nanoid@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.0.3.tgz#6c97f53d793a7a1de6a38ebb46f50f95bf9793c7"
-  integrity sha512-I7X2b22cxA4LIHXPSqbBCEQSL+1wv8TuoefejsX4HFWyC6jc5JG7CEaxOltiKjc1M+YCS2YkrZZcj4+dytw9GA==
+nanoid@^5.0.2, nanoid@^5.0.3, nanoid@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.0.4.tgz#d2b608d8169d7da669279127615535705aa52edf"
+  integrity sha512-vAjmBf13gsmhXSgBrtIclinISzFFy22WwCYoyilZlsrRXNIHSwgFQ1bEdjRwMT3aoadeIF6HMuDRlOxzfXV8ig==
 
 next-tick@^1.1.0:
   version "1.1.0"
@@ -2189,6 +2264,13 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+vaul-svelte@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/vaul-svelte/-/vaul-svelte-0.1.0.tgz#3133d7b2290482d1527518e93919dc02eaa683f0"
+  integrity sha512-8Ab5at9QsA/JeJ3M5ltrzE5+vFt3v4cjgZHYeSVbhHXZ7KV1JWNjkQZ1IJv52HirnzhZPzfKt+EjWtsWHeWBoQ==
+  dependencies:
+    bits-ui "^0.13.3"
 
 vite@^5.0.0:
   version "5.0.12"
