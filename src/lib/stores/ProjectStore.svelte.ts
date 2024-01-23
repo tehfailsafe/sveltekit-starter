@@ -24,9 +24,9 @@ const ProjectStore = async () => {
 		projects = data;
 	}
 
-	const createProject = async () => {
+	const createProject = async (title: string) => {
 		const newProject = {
-			title: 'New Project',
+			title,
 			user_id: user!.id
 		};
 		projects = [...projects, { ...newProject, api_routes: [] }];
