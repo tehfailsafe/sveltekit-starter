@@ -1,16 +1,17 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
 	import * as Table from '$lib/components/ui/table';
+	import * as Popover from '$lib/components/ui/popover';
 	import * as Dialog from '$lib/components/ui/dialog';
 	import { projectStore } from '$lib/stores/ProjectStore.svelte';
 	import Time from 'svelte-time';
 	import Input from '$lib/components/ui/input/input.svelte';
+	import { MoreVertical } from 'lucide-svelte';
 
 	let input = '';
 	let dialogOpen = false;
 </script>
 
-<h2>{dialogOpen}</h2>
 <div class="container mt-12">
 	<div class="flex justify-between">
 		<h1>ProjectStore</h1>
@@ -69,11 +70,23 @@
 							.api_routes.length} 200 OK</Table.Cell
 					>
 					<Table.Cell class="text-right">
-						<Time
-							class="capitalize"
-							timestamp={project.api_routes[0]?.last_checked || 'Never'}
-							relative
-						></Time>
+						{#if project.api_routes[0]?.last_checked}
+							<Time
+								class="capitalize"
+								timestamp={project.api_routes[0]?.last_checked || 'Never'}
+								relative
+							/>
+						{:else}
+							Never
+						{/if}
+					</Table.Cell>
+					<Table.Cell>
+						<Popover.Root>
+							<Popover.Trigger>
+								<MoreVertical color="#ffffff" class="text-red-500"></MoreVertical>
+							</Popover.Trigger>
+							<Popover.Content>Place content for the popover here.</Popover.Content>
+						</Popover.Root>
 					</Table.Cell>
 				</Table.Row>
 			{/each}
