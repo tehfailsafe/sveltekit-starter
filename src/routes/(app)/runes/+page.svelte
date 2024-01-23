@@ -6,7 +6,7 @@
 	import { projectStore } from '$lib/stores/ProjectStore.svelte';
 	import Time from 'svelte-time';
 	import Input from '$lib/components/ui/input/input.svelte';
-	import { MoreVertical } from 'lucide-svelte';
+	import DotsVertical from 'svelte-material-icons/DotsVertical.svelte';
 
 	let input = '';
 	let dialogOpen = false;
@@ -83,7 +83,7 @@
 					<Table.Cell>
 						<Popover.Root>
 							<Popover.Trigger>
-								<MoreVertical color="#ffffff" class="text-red-500"></MoreVertical>
+								<DotsVertical size="24px"></DotsVertical>
 							</Popover.Trigger>
 							<Popover.Content>Place content for the popover here.</Popover.Content>
 						</Popover.Root>
