@@ -965,23 +965,23 @@ electron-to-chromium@^1.4.535:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.588.tgz#d553f3c008e73488fb181fdf2601fdb0b1ffbb78"
   integrity sha512-soytjxwbgcCu7nh5Pf4S2/4wa6UIu+A3p03U2yVr53qGxi1/VTR3ENI+p50v+UxqqZAfl48j3z55ud7VHIOr9w==
 
-embla-carousel-reactive-utils@8.0.0-rc19:
-  version "8.0.0-rc19"
-  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.0.0-rc19.tgz#6604f9c9f3a07f13734ca0af7c19310c1adc1f7e"
-  integrity sha512-ed9NppY0OxTtrSIwTCYNcMLlQfSNcNy8Zsw8uIG0te3qrhvQ2ePPsbcElK2SRAV8VMU6G7JQweQIb6amzYMDXA==
+embla-carousel-reactive-utils@8.0.0-rc20:
+  version "8.0.0-rc20"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.0.0-rc20.tgz#606c2708bdb95c4c3391a3a6cd01d3c7b81e36f3"
+  integrity sha512-fE7IeSS8HqwDnTDMP8eo0i4pcYQAemmJq53zCLXnp3Yj/p5+IpB1nC7aKQjd2ug1dGOSwwNRFaPI3shlAVVW/A==
 
-embla-carousel-svelte@^8.0.0-rc19:
-  version "8.0.0-rc19"
-  resolved "https://registry.yarnpkg.com/embla-carousel-svelte/-/embla-carousel-svelte-8.0.0-rc19.tgz#c8b87b4cf1903053e69a764000cc211e8c266281"
-  integrity sha512-gDNjcihzTNB/0Iy6klOa0g34x11sWD6sZ3n6835EV/GtHq4iu2P5c/o71KwZRsCTCoRnILpPuVSBUEiwzew1AA==
+embla-carousel-svelte@^8.0.0-rc20:
+  version "8.0.0-rc20"
+  resolved "https://registry.yarnpkg.com/embla-carousel-svelte/-/embla-carousel-svelte-8.0.0-rc20.tgz#e351c843da85533cd95c64f2cf3afd65b5fce287"
+  integrity sha512-MpON0Pw1EcYMjJt1VCnDk+HXTQrNwyHTlhdQ/WFx5QrXOpqvSup1nXKiLYsjxKkwBv5vYU9e04akNdqEJQ3iIg==
   dependencies:
-    embla-carousel "8.0.0-rc19"
-    embla-carousel-reactive-utils "8.0.0-rc19"
+    embla-carousel "8.0.0-rc20"
+    embla-carousel-reactive-utils "8.0.0-rc20"
 
-embla-carousel@8.0.0-rc19:
-  version "8.0.0-rc19"
-  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.0.0-rc19.tgz#f0d8dbf54f2f8f2cdfe0697f371fe5d5fd4e2dac"
-  integrity sha512-PAChVyYoVZo8subkBN8LjZ7+0vk4CmVvMnxH0Y2ux76VUEUBl1wk5xDo8+MUhH5MXU6ZrgkBpMe++bKob1Z+2g==
+embla-carousel@8.0.0-rc20:
+  version "8.0.0-rc20"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.0.0-rc20.tgz#6763e9db8db11a64d49f42ecdb15936a694fed7e"
+  integrity sha512-fhzhbIAcsjSpUsg5jWsg0+zVyJhY5x2SPXtuS4MPAWQWoVQpvkcbX9r0FvPBn6emTbgNFRtAcWczstJy2msdUw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -1141,6 +1141,11 @@ formdata-node@^4.3.2:
   dependencies:
     node-domexception "1.0.0"
     web-streams-polyfill "4.0.0-beta.3"
+
+formsnap@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/formsnap/-/formsnap-0.4.2.tgz#e755dea68f1f5cfa9c9e4919f03de266f7170631"
+  integrity sha512-iUhGDUcjUW9tCOYLZ1rbNR1wkjtEbrXDxhUnl7+zPKjP5K8ikDfhZWH1cquKdUcHJoSE7M/Rruvg0fNQMjSNtA==
 
 fraction.js@^4.3.6:
   version "4.3.7"
@@ -1387,6 +1392,11 @@ kleur@^4.1.5:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-4.1.5.tgz#95106101795f7050c6c650f350c683febddb1780"
   integrity sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==
 
+klona@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
+  integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
+
 lilconfig@^2.0.5, lilconfig@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
@@ -1518,10 +1528,10 @@ mkdirp@^1.0.3:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mode-watcher@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/mode-watcher/-/mode-watcher-0.1.1.tgz#c910bd7e91ab7ae3354b9c357e703c9b36147fb4"
-  integrity sha512-11B0IDiJE5lbWsCGAIpBSkD5TtzCooBHvIMNWsuTeAlBHL6HWLb55aslCcx939v8qUymjFgDtpQ70CU1JU73lg==
+mode-watcher@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/mode-watcher/-/mode-watcher-0.1.2.tgz#b6f306ebf42252271c06629a81a15b9fef7baffb"
+  integrity sha512-XTdPCdqC3kqSvB+Q262Kor983YJkkB2Z3vj9uqg5IqKQpOdiz+xB99Jihp8sWbyM67drC7KKp0Nt5FzCypZi2g==
 
 mri@^1.1.0:
   version "1.2.0"
@@ -2072,6 +2082,11 @@ svelte-preprocess@^5.1.0:
     sorcery "^0.11.0"
     strip-indent "^3.0.0"
 
+svelte-sonner@^0.3.11:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/svelte-sonner/-/svelte-sonner-0.3.11.tgz#28c4d7a9364835031b7816a55219f534b646b97b"
+  integrity sha512-TkjgDC7zr0waky81Z9CShXMD+4NQ7UASuRx0BhgQo8ZTDQQYk8X8MzJa3zVtZVa6RYJEiahHBXx8Zt/Ie9G5hg==
+
 svelte-stripe@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/svelte-stripe/-/svelte-stripe-1.1.2.tgz#d9e68df2d2398c394d8e754ad59ecae11ab930c6"
@@ -2104,6 +2119,14 @@ svelte@^5.0.0-next.37:
     locate-character "^3.0.0"
     magic-string "^0.30.4"
     zimmerframe "^1.1.0"
+
+sveltekit-superforms@^1.13.4:
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/sveltekit-superforms/-/sveltekit-superforms-1.13.4.tgz#e006f43375ed4987c603325eedc93c5288d679ab"
+  integrity sha512-rM2+Ictaw7OAIorCLmvg82orci/mtO9ZouI4emtx8SyYngx9aED+eNZlHPLufgB6D7geL2a+hMSFtM3zmMQixQ==
+  dependencies:
+    devalue "^4.3.2"
+    klona "^2.0.6"
 
 tabbable@^6.2.0:
   version "6.2.0"
@@ -2354,3 +2377,8 @@ zimmerframe@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/zimmerframe/-/zimmerframe-1.1.0.tgz#29f2b760d11228490109808e2b56ba67f25af199"
   integrity sha512-+AmV37r9NPUy7KcuG0Fde9AAFSD88kN5pnqvD7Pkp5WLLK0jct7hAtIDXXFDCRk3l5Mc1r2Sth3gfP2ZLE+/Qw==
+
+zod@^3.22.4:
+  version "3.22.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
+  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
