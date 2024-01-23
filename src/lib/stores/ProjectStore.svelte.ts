@@ -24,19 +24,27 @@ const ProjectStore = async () => {
 		projects = data;
 	}
 
+	const createProject = async () => {
+		const newProject = {
+			title: 'New Project',
+			user_id: user!.id
+		};
+		projects = [...projects, { ...newProject, api_routes: [] }];
+
+		const { data } = await supabase.from('api_projects').insert(newProject).select().single();
+	};
+
+	const deleteProject = async (id: string) => {
+		projects = projects.filter((project) => project.id !== id);
+		await supabase.from('api_projects').delete().match({ id });
+	};
+
 	return {
 		get projects() {
 			return projects;
 		},
-		createProject: async () => {
-			const newProject = {
-				title: 'New Project',
-				user_id: user!.id
-			};
-			projects = [...projects, { ...newProject, api_routes: [] }];
-
-			const { data } = await supabase.from('api_projects').insert(newProject).select().single();
-		}
+		createProject,
+		deleteProject
 	};
 };
 
