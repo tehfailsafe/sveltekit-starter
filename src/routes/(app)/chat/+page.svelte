@@ -1,14 +1,13 @@
 <script lang="ts">
 	export let data;
-	import { messages } from '$lib/stores/messages';
-	import { enhance } from '$app/forms';
 	import { SSE } from 'sse.js';
 	import { supabase } from '$lib/supabase';
-	import { onMount } from 'svelte';
 	import Message from '$lib/components/message.svelte';
+	import { writable } from 'svelte/store';
 
 	let loading = false;
 	let currentAnswer = '';
+	export let messages = writable([]);
 
 	const onSubmit = async ({ target }: { target: HTMLFormElement }) => {
 		const formData = new FormData(target);
@@ -57,10 +56,6 @@
 		<input type="text" name="prompt" />
 		<button type="submit">Ask</button>
 	</form>
-
-	{#each data.messages as message}
-		<Message {message} />
-	{/each}
 
 	{#each $messages as message}
 		<Message {message} />

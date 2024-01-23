@@ -12,8 +12,9 @@
 		<Button variant="secondary" on:click={countStore.increment}>Increment</Button>
 	</div>
 	<h1>Other links:</h1>
-	<ul class="list-disc list-inside">
+	<ul class="list-inside">
 		<li><a href="/payment">Payment</a></li>
 		<li><a href="/runes">Runes</a></li>
+		<li><a href="/chat">Chatbot</a></li>
 	</ul>
 </div>
