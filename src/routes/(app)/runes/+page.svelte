@@ -7,6 +7,7 @@
 	import Time from 'svelte-time';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import DotsVertical from 'svelte-material-icons/DotsVertical.svelte';
+	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
 
 	let input = '';
 	let dialogOpen = false;
@@ -55,6 +56,7 @@
 				<Table.Head>Endpoints</Table.Head>
 				<Table.Head>Overall Status</Table.Head>
 				<Table.Head class="text-right">Last Checked</Table.Head>
+				<Table.Head class="w-[32px]"></Table.Head>
 			</Table.Row>
 		</Table.Header>
 		<Table.Body>
@@ -81,12 +83,16 @@
 						{/if}
 					</Table.Cell>
 					<Table.Cell>
-						<Popover.Root>
-							<Popover.Trigger>
+						<DropdownMenu.Root>
+							<DropdownMenu.Trigger>
 								<DotsVertical size="24px"></DotsVertical>
-							</Popover.Trigger>
-							<Popover.Content>Place content for the popover here.</Popover.Content>
-						</Popover.Root>
+							</DropdownMenu.Trigger>
+							<DropdownMenu.Content>
+								<DropdownMenu.Item on:click={() => projectStore.deleteProject(project.id)}
+									>Delete</DropdownMenu.Item
+								>
+							</DropdownMenu.Content>
+						</DropdownMenu.Root>
 					</Table.Cell>
 				</Table.Row>
 			{/each}

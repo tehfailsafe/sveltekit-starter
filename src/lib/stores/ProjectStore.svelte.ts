@@ -31,12 +31,12 @@ const ProjectStore = async () => {
 		};
 		projects = [...projects, { ...newProject, api_routes: [] }];
 
-		const { data } = await supabase.from('api_projects').insert(newProject).select().single();
+		await supabase.from('api_projects').insert(newProject).select().single();
 	};
 
-	const deleteProject = async (id: string) => {
-		projects = projects.filter((project) => project.id !== id);
-		await supabase.from('api_projects').delete().match({ id });
+	const deleteProject = async (project_id: string) => {
+		projects = projects.filter((project) => project.id !== project_id);
+		await supabase.from('api_projects').delete().eq('id', project_id);
 	};
 
 	return {
